@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(16, 16, 27);
+    color: white;
+    font-family: monospace;
+    font-size: 150%;
+
+
+}
+* {text-transform: lowercase; text-align: center;}
+.nothing {
+    color: gray;
+}
+.projects {
+    border: rgba(255, 255, 255, 0.377) 2px solid;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    min-height: 50%
+}
