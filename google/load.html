@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="style.css">
+<body class="load" onload="tips()">
+<img src="load.gif" width="200px" height="200px">
+<h2>Your Result is Loading...</h2>
+<h3 id="load"></h3>
+<input type="range" min="0" max="100" step="1" disabled id="prog" value="0">
+<button onclick="speed()">Speed This Up!</button>
+</body>
+
+<script>
+    let time = 1000
+    function speed() {
+        time = Number(time - 100)
+    }
+    function tips() {
+
+        let intervalId = setInterval(function() {
+        prog = document.getElementById("prog");
+        tipel = document.getElementById("load");
+        const funcs = ["Indexing Pages", "Connecting to Servers", "Sending Requests", "Establishing Connections", "Checking Network Connection", "Caching Pages", "Fetching URLS", "Doing Something", "Loading Pages", "Fetching Page Titles", "Stealing your data", "Hacking the mainframe", "Selling your data"];
+        const randomIndex = Math.floor(Math.random() * funcs.length);
+        tipel.innerHTML = `${funcs[randomIndex]}... (${prog.value}% done)`;
+        prog.value++;
+        prog.style = "transition: all .25s;"
+        if(prog.value > 99) {
+        window.location.assign("error.html");
+        }
+        }, time);
+    }
+</script>

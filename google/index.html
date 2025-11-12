@@ -1,4 +1,24 @@
-<h1 class="google">Search Engine</h1>
+<h1 class="google">Totally Real Search Engine</h1>
 <div class="search"><input type="text"> <input type="button"> </div>
-<button>Search</button> <button>I'm feeling retarded</button>
+<button id="search" onclick="load()">Search</button> <button onclick="luck()" id="lucky">I'm feeling somewhat lucky</button>
 <link rel="stylesheet" href="style.css"> 
+
+<script>
+    function luck() {
+        var lucky = document.getElementById("lucky");
+        max = 100;
+        min = 0;
+        min = Math.ceil(min);
+        max = Math.floor(max);
+       let intervalId = setInterval(function() {
+        var random = Math.random() * (max - min) + min;
+        lucky.style = `position:absolute;top:${random}%;left:${random}%;transition: 0.25s all ease-in-out;`
+        lucky.innerHTML = `${Math.random() * (0 - 99999) + 99999}`
+}, 250);
+
+    
+    }
+    function load() {
+       window.location.assign("load.html") 
+    }
+</script>
