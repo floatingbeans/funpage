@@ -1,0 +1,32 @@
+body {
+    background-color: white;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+}
+.google {
+    font-size: 250%;
+    color: blueviolet;
+    font-weight: 3590809340932;
+}
+.search input[type=text] {
+    width: 90%;
+    justify-content: left;
+    display: flex;
+    padding: 20px 20px;
+    border: rgb(197, 197, 197) solid 2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.search input[type=button] {
+    width: 9%;
+    justify-content: right;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: blue;
+    
+}
+.search {
+    display: flex;
+}
