@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="style.css">
+<h1 onclick="fall(`head`)" id="head">An Ordinary Webpage</h1>
+<h2 onclick="fall(`head2`)" id="head2">Nothing to see here.</h2>
+
+<div class="box" onclick="fall(`box`)" id="box">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique velit magna. Maecenas ut tortor ullamcorper, feugiat sem quis, varius sapien. Morbi tempor erat et leo maximus tincidunt. In fermentum vehicula mauris, sed sagittis sem rutrum ac. Curabitur cursus erat varius vestibulum elementum. Maecenas est purus, fringilla quis interdum vel, suscipit mattis augue. Cras tempus dolor sapien, eu malesuada tortor mattis nec.
+
+Nullam tellus lectus, tristique imperdiet dolor vitae, euismod eleifend lectus. Donec pellentesque risus in ligula faucibus, vel imperdiet diam ultricies. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque quis imperdiet neque, et vehicula eros. Maecenas in quam fermentum, volutpat dolor vitae, faucibus orci. Nam condimentum egestas sagittis. Ut commodo, nulla non vehicula feugiat, eros sem blandit augue, ac venenatis lorem felis sed sem. Integer cursus sed nunc nec scelerisque. Integer purus urna, ornare semper tincidunt a, lobortis sit amet lacus. Ut scelerisque molestie nibh fermentum feugiat. Ut at metus mollis, maximus purus vel, tristique orci.
+</p>
+<h3 onclick="secretfall('head3')" id="head3">No, really there's nothing here</h3>
+</div>
+
+<script>
+    function fall(id) {
+        let fall = document.getElementById(id);
+        fall.style = "animation: fall 2s forwards ease-in-out;"
+    }
+    function secretfall(id) {
+    let fall = document.getElementById(id);
+    fall.style = "animation: fall 2s forwards ease-in-out;"
+    window.location.assign("secret.html");
+    }
+</script>

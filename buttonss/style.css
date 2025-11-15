@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Frutiger;
+    text-align: center;
+    font-size: 125%;
+    margin-top: 2.5%;
+}
+.box {
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 60%;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Frutiger';
+    src: url(Frutiger.ttf);
+}
+@font-face {
+    font-family: 'Frutiger Bold';
+    src: url(Frutiger_bold.ttf);
+}
+h1 {
+    font-family: "Frutiger Bold";
+
+}
+
+* {
+    position: sticky;
+}
+
+@keyframes fall {
+ 0% {
+    transform: rotate(0turn);
+    transform: translate(0, 0); /* Start at the initial position */
+  }
+  50% {
+    
+  }
+  100% {
+    
+    display: none;
+    opacity: 0;
+    transform: translate(0, 125vh) rotate(-0.5turn);; /* Move down the full viewport height */
+  }
+}
